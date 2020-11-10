@@ -240,7 +240,7 @@ def bi_lstm_pred(data_loader):
     CONFIG_Bi_LSTM = {
         'embedding_dim': 50,
         'hidden_size': 256,
-        'n_layers': 4,
+        'n_layers': 2,
         'vocab_size': 58954,
         'output_size': 2,
         'use_gpu': True,
@@ -253,7 +253,7 @@ def bi_lstm_pred(data_loader):
                     CONFIG_Bi_LSTM['vocab_size'], CONFIG_Bi_LSTM['output_size'], CONFIG_Bi_LSTM['use_gpu'],
                     1,
                     CONFIG_Bi_LSTM['pretrained_embed'])
-    model.load_state_dict(torch.load('./Save_model/model_LSTM2.pth'))
+    model.load_state_dict(torch.load('./Save_model/model_BiLSTM2_layer.pth'))
     model = model.to(device)
     model.eval()
     with torch.no_grad():
