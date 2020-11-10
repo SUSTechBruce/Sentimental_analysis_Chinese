@@ -1,0 +1,2 @@
+# Sentimental_analysis_Chinese
+Chinese sentences sentimental analysis
