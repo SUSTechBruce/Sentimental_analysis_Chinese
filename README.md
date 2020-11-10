@@ -1,5 +1,7 @@
 # Sentimental_analysis_Chinese
 Chinese sentences sentimental analysis
+
+#### Step0: Download the code and create `Save_model`directory in the same In the current root
 #### Step1: Train model
 run: - Bi_LSTM_model
      - TextCNN
