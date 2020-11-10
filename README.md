@@ -14,3 +14,5 @@ if __name__ == "__main__":
     predict_sentence(tensor, 'Bi_LSTM')
 
 ```
+#### 分词
+结巴分词可能会快一些，清华和北大的分析load model需要一定时间
